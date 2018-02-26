@@ -86,7 +86,8 @@ public class HttpServerVerticle extends AbstractVerticle {
 				context.put("id", body.getInteger("id", -1));
 				context.put("newPage", found ? "no" : "yes");
 				context.put("rawContent", rawContent);
-				context.put("content", Processor.process(rawContent));
+//				context.put("content", Processor.process(rawContent));
+				context.put("content", rawContent);
 				context.put("timestamp", new Date().toString());
 				templateEngine.render(context, "templates", "/page.ftl", ar -> {
 					if (ar.succeeded()) {
