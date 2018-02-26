@@ -1,3 +1,0 @@
-# vertxstudy
-staticresource 站点包含了静态资源css和js
-vertx-wiki 使用了vertx技术实现的wiki的增删改查，后台数据库为mysql
